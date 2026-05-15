@@ -1,0 +1,33 @@
+.filters .container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  margin-top: 94px;
+}
+
+.filters ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.filters a {
+  display: inline-block;
+  padding: 8px 25px;
+  background-color: var(--light-bg);
+  color: var(--text-main);
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.filters a:hover {
+  background-color: var(--accent);
+  color: var(--white);
+}

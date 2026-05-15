@@ -1,0 +1,99 @@
+.hero {
+  background-color: var(--dark-bg);
+  color: var(--white);
+  line-height: 1.3;
+  padding: 200px 0;
+
+  background-image:
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../hero.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero h2 {
+  display: block;
+  width: 696px;
+  height: 120px;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 6%;
+  text-transform: uppercase;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.hero button {
+  display: inline-block;
+  border-radius: 4px;
+  height: 50px;
+  background-color: var(--accent);
+  color: var(--white);
+
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
+
+  transition: background-color var(--transition);
+}
+
+.hero button:hover {
+  background-color: #1976d2;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+}
+
+.text ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  line-height: 1.3;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.text-ul-item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--light-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.text-ul-item:nth-child(1)::before {
+  background-image: url("../antenna.png");
+}
+
+.text-ul-item:nth-child(2)::before {
+  background-image: url("../clock.png");
+}
+
+.text-ul-item:nth-child(3)::before {
+  background-image: url("../diagram.png");
+}
+
+.text-ul-item:nth-child(4)::before {
+  background-image: url("../astronaut.png");
+}
+
+.text p {
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
